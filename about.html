@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Laundry Management | WorkDo</title>
+    <meta name="author" content="Workdo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Laundry Management by Workdo is a smart solution to manage laundry services, orders, delivery schedules, and customer requests efficiently.">
+    <meta name="keywords" content="Laundry Management, Laundry Addon, Workdo, Laundry Services, Order Management, Delivery Scheduling, Customer Laundry Requests, Laundry Dashboard">
+    <link rel="icon" href="assets/images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky w-full top-0 z-[3]">
+      <div
+        class="bg-secondary text-white py-2.5 relative overflow-hidden hidden lg:block">
+        <div
+          class="md:container w-full mx-auto px-4">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center text-sm relative z-10">
+            <div class="flex items-center gap-4 mb-2 sm:mb-0">
+              <span class="flex items-center">
+                <i class="fas fa-phone me-2"></i>
+                <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+              </span>
+              <span class="flex items-center">
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:info@clenx.com">info@clenx.com</a>
+              </span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-clock me-2"></i>
+              <span class>Mon-Sat : 7AM-9PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="md:container w-full mx-auto px-4 py-3 lg:py-4">
+        <div class="flex items-center justify-between">
+          <div
+            class="flex items-center logo-col md:max-w-[120px] max-w-[100px] w-full">
+            <a href="index.html" class="block">
+              <img src="assets/images/logo.png" alt="Laundry management"
+                class="w-full h-full object-scale-down" />
+            </a>
+          </div>
+          <div class="hidden lg:flex gap-8 capitalize font-medium">
+            <a
+              href="services.html"
+              class="hover:text-primary capitalize transition-all duration-300">Services</a>
+            <a
+              href="about.html"
+              class="hover:text-primary capitalize transition-all duration-300">About</a>
+            <a
+              href="pricing.html"
+              class="hover:text-primary capitalize transition-all duration-300">pricing</a>
+              <a
+              href="blog.html"
+              class="hover:text-primary capitalize transition-all duration-300">Blog</a>
+                      <a
+            href="faq.html"
+            class="hover:text-primary capitalize transition-all duration-300">faq</a>
+            <a
+            href="contact.html"
+            class="hover:text-primary capitalize transition-all duration-300">Contact</a>
+          </div>
+          <div class="flex items-center gap-4">
+            <a
+              href="booking.html"
+              class="hidden lg:inline-flex btn btn-secondary">
+              Book Now
+            </a>
+            <button
+              class="lg:hidden w-10 h-10 text-xl flex items-center justify-center"
+              id="mobile-menu-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="banner-section relative lg:py-16 py-10 z-[1]">
+        <div class="absolute inset-0 w-full h-full z-[-1]">
+            <img src="assets/images/common-banner-bg.png" alt="Common Banner Background Image" class="w-full h-full object-cover rtl:scale-x-[-1]" loading="lazy">
+        </div>
+        <div class="md:container w-full mx-auto px-4">
+          <div class="text-white">
+            <h2 class="text-2xl sm:text-4xl lg:text-5xl mb-2">About Us</h2>
+            <nav class="md:text-base text-sm">
+              <ul class="flex flex-wrap items-center justify-start capitalize">
+                <li class="flex items-center font-medium">
+                  <a href="index.html">Home</a>
+                  <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                </li>
+                <li class="font-medium">About Us</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+       <!-- what we do section -->
+        <section class="pt-10 lg:pt-16">
+            <div class="md:container w-full mx-auto px-4">
+
+                <!-- Section Header -->
+                <div class="text-center md:mb-6 mb-4">
+                    <div class="text-2xl font-subtitle font-bold text-primary capitalize mb-2"> What We Do
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 md:mb-4">
+                        Quality Care for Every Fabric
+                    </h2>
+                </div>
+                <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 lg:gap-8">
+                    <div class="bg-white p-4 rounded-2xl shadow-lg border">
+                        <div
+                            class="h-12 w-12 md:w-14 md:h-14 bg-primary rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-tshirt text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-base md:text-2xl  text-gray-900 mb-3">Wash and Fold</h3>
+                            <p class="text-gray-600 leading-relaxed mb-3 line-clamp-4">Complete wash, dry, and fold
+                                service for everyday clothing. We handle everything so you don't have to.</p>
+                        </div>
+                        <a href="service-details.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl shadow-lg border">
+                        <div
+                            class="h-12 w-12 md:w-14 md:h-14 bg-primary rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-user-tie text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-base md:text-2xl  text-gray-900 mb-3">Dry Cleaning</h3>
+                            <p class="text-gray-600 leading-relaxed mb-3 line-clamp-4">Professional dry cleaning for
+                                delicate fabrics, suits, and garments requiring special care.</p>
+                        </div>
+                        <a href="service-details.html" class="btn btn-secondary">Learn More</a>
+
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl shadow-lg border">
+                        <div
+                            class="h-12 w-12 md:w-14 md:h-14 bg-primary rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-bolt text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-base md:text-2xl  text-gray-900 mb-3">Press & Iron</h3>
+                            <p class="text-gray-600 leading-relaxed mb-3 line-clamp-4">Expert pressing and ironing
+                                services to ensure your clothes look crisp and professional.</p>
+                        </div>
+                        <a href="service-details.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Story Section -->
+        <section class="py-10 lg:py-16">
+            <div class="md:container w-full mx-auto px-4">
+                <div class="grid lg:grid-cols-3 grid-cols-1 xl:gap-10 gap-6">
+                <!-- Left Content -->
+               <div class="flex flex-col justify-center relative z-[1]">
+                <div class="about-content">
+                    <h2 class="md:text-4xl text-2xl xl:text-5xl font-semibold mb-3 md:mb-4 text-dark">10+ Years of Laundry Care</h2>
+                </div>
+                <div>
+                    <p class="mb-4">
+                        For over a decade, we’ve been helping individuals and businesses manage their laundry services with ease. From order tracking to delivery scheduling, our solutions are built to save time and improve efficiency.
+                    </p>
+                    <p>
+                        Trusted by households, hotels, and enterprises alike, our platform ensures reliable laundry processing, transparent operations, and timely delivery—making clean clothes and customer satisfaction our top priorities.
+                    </p>
+                </div>
+                <div class="years absolute top-0 start-0 font-bold text-[14vw] !leading-[1] text-[#e5e7eb91] z-[-1]">10</div>
+            </div>
+                <!-- Center Image -->
+                <div class="about-images-col flex flex-col justify-center">
+                    <div class="relative lg:pt-[90%] sm:pt-[49%] h-[265px] rounded-lg overflow-hidden">
+                        <img src="assets/images/about.png" alt="Vehicle Booking Image" loading="lazy" class="absolute inset-0 w-full h-full lg:object-cover object-scale-down object-center">
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center relative z-[1]">
+                    <h3 class="md:text-4xl text-2xl xl:text-5xl font-semibold mb-3 md:mb-4 text-dark">Our Laundry Philosophy</h3>
+                    <p class="mb-3">
+                        Managing laundry should be simple, efficient, and reliable. That’s why we provide a streamlined system designed to handle orders, track services, and ensure timely delivery with complete transparency.
+                    </p>
+                    <p>
+                        From individual customers to large-scale businesses, we focus on quality care, customer convenience, and a hassle-free laundry experience that guarantees cleanliness and satisfaction every time.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- counter section -->
+        <section class="py-10 lg:py-16 bg-secondary">      
+            <div class="md:container w-full mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-12 gap-x-4 gap-y-5">
+                    <div class="relative">
+                        <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 lg:p-8 text-center lg:mt-8 mt-6">
+                            <div class="absolute lg:top-2 top-1 left-1/2 transform -translate-x-1/2">
+                                <div class="lg:w-12 w-10 h-10 lg:h-12 bg-primary rounded-lg flex items-center justify-center rotate-45">
+                                    <i class="fas fa-users text-white text-xl -rotate-45"></i>
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <div class="text-3xl lg:text-5xl font-bold text-gray-900 mb-2">
+                                    <span class="counter" data-target="1500">0</span>+
+                                </div>
+                                <p class="text-gray-800">Happy Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 lg:p-8 text-center lg:mt-8 mt-6">
+                            <div class="absolute lg:top-2 top-1 left-1/2 transform -translate-x-1/2">
+                                <div class="lg:w-12 w-10 h-10 lg:h-12 bg-primary rounded-lg flex items-center justify-center rotate-45">
+                                    <i class="fas fa-box text-white text-xl -rotate-45"></i>
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <div class="text-3xl lg:text-5xl font-bold text-gray-900 mb-2">
+                                    <span class="counter" data-target="25">0</span>K+
+                                </div>
+                                <p class="text-gray-800">Orders Complete</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 lg:p-8 text-center lg:mt-8 mt-6">
+                            <div class="absolute lg:top-2 top-1 left-1/2 transform -translate-x-1/2">
+                                <div class="lg:w-12 w-10 h-10 lg:h-12 bg-primary rounded-lg flex items-center justify-center rotate-45">
+                                    <i class="fas fa-calendar-alt text-white text-xl -rotate-45"></i>
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <div class="text-3xl lg:text-5xl font-bold text-gray-900 mb-2">
+                                    <span class="counter" data-target="15">0</span>+
+                                </div>
+                                <p class="text-gray-800">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 lg:p-8 text-center lg:mt-8 mt-6">
+                            <div class="absolute lg:top-2 top-1 left-1/2 transform -translate-x-1/2">
+                                <div class="lg:w-12 w-10 h-10 lg:h-12 bg-primary rounded-lg flex items-center justify-center rotate-45">
+                                    <i class="fas fa-star text-white text-xl -rotate-45"></i>
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <div class="text-3xl lg:text-5xl font-bold text-gray-900 mb-2">
+                                    <span class="counter" data-target="100">0</span>%
+                                </div>
+                                <p class="text-gray-800">Satisfaction Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Section -->
+        <section class="py-10 lg:py-16">
+            <div class="md:container w-full mx-auto px-4">
+                <!-- Section Header -->
+                <div class="text-center md:mb-6 mb-4">
+                    <div class="text-2xl font-subtitle font-bold text-primary capitalize mb-2"> Team</div>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 md:mb-4">
+                        Meet Our Team
+                    </h2>
+                </div>
+
+                <div class="team-slider swiper px-1 -mx-1 pb-2 -mb-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="team-card group relative  bg-white rounded-2xl overflow-hidden border border-gray-200 transition-all duration-300 shadow-md">
+                                    <div class="w-full h-full overflow-hidden">
+                                        <img src="./assets/images/team-1.png" alt="Michael Johnson" class="inset-0 w-full  object-cover group-hover:scale-110 transition-transform duration-700">
+                                    </div>
+                                    <div class="absolute right-4 top-4 flex flex-col gap-2 md:opacity-0 md:translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-facebook-f md:text-lg text-sm"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-x-twitter md:text-lg text-sm"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-linkedin-in md:text-lg text-sm"></i>
+                                        </a>
+                                    </div>
+                                <div class="p-4 text-center">
+                                    <h3 class="text-xl mb-1">Michael Johnson</h3>
+                                    <p class="text-primary font-medium">Laundry Manager</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team-card group relative  bg-white rounded-2xl overflow-hidden border border-gray-200 transition-all duration-300 shadow-md">
+                                    <div class="w-full h-full overflow-hidden">
+                                        <img src="./assets/images/team-2.png" alt="Sarah Williams" class="inset-0 w-full  object-cover group-hover:scale-110 transition-transform duration-700">
+                                    </div>
+                                    <div class="absolute right-4 top-4 flex flex-col gap-2 md:opacity-0 md:translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-facebook-f md:text-lg text-sm"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-x-twitter md:text-lg text-sm"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-linkedin-in md:text-lg text-sm"></i>
+                                        </a>
+                                    </div>
+                                <div class="p-4 text-center">
+                                    <h3 class="text-xl mb-1">Sarah Williams</h3>
+                                    <p class="text-primary font-medium">Dry Cleaning Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team-card group relative  bg-white rounded-2xl overflow-hidden border border-gray-200 transition-all duration-300 shadow-md">
+                                    <div class="w-full h-full overflow-hidden">
+                                        <img src="./assets/images/team-3.png" alt="Emma Davis" class="inset-0 w-full  object-cover group-hover:scale-110 transition-transform duration-700">
+                                    </div>
+                                    <div class="absolute right-4 top-4 flex flex-col gap-2 md:opacity-0 md:translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-facebook-f md:text-lg text-sm"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-x-twitter md:text-lg text-sm"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-linkedin-in md:text-lg text-sm"></i>
+                                        </a>
+                                    </div>
+                                <div class="p-4 text-center">
+                                    <h3 class="text-xl mb-1">Emma Davis</h3>
+                                    <p class="text-primary font-medium">Quality Control</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team-card group relative  bg-white rounded-2xl overflow-hidden border border-gray-200 transition-all duration-300 shadow-md">
+                                    <div class="w-full h-full overflow-hidden">
+                                        <img src="./assets/images/team-4.png" alt="David Brown" class="inset-0 w-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                    </div>
+                                    <div class="absolute right-4 top-4 flex flex-col gap-2 md:opacity-0 md:translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-facebook-f md:text-lg text-sm"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-x-twitter md:text-lg text-sm"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="md:w-10 md:h-10 w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                            <i class="fab fa-linkedin-in md:text-lg text-sm"></i>
+                                        </a>
+                                    </div>
+                                <div class="p-4 text-center">
+                                    <h3 class="text-xl mb-1">David Brown</h3>
+                                    <p class="text-primary font-medium">Delivery Coordinator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-wrapper">
+                        <div class="bg-transparent swiper-button-prev">
+                            <i class="fa-solid fa-angles-right md:text-4xl text-3xl scale-x-[-1]"></i>
+                        </div>
+                        <div class="bg-transparent swiper-button-next">
+                            <i class="fa-solid fa-angles-right md:text-4xl text-3xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer
+      class="md:pt-44 pt-24 relative overflow-hidden">
+    <div class="absolute top-0 start-0 w-full md:h-[155px] h-[60px]">
+      <img src="assets/images/footer-bg.png" alt="Footer Image" loading="lazy" class="w-full h-full object-cover">
+    </div>
+      <div class="bg-light pt-8 md:-mt-8 -mt-10">
+        <div class="md:container w-full mx-auto px-4">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 xl:gap-12">
+            <div class="space-y-4 sm:col-span-3 lg:col-span-1">
+              <div
+                class="flex items-center footer-logo max-w-[110px] lg:max-w-[160px] w-full sm:mx-auto lg:m-0">
+                <a href="index.html" class="block transition-transform duration-300">
+                  <img src="assets/images/logo.png" alt="footer-logo" />
+                </a>
+              </div>
+              <p
+                class="sm:text-center lg:text-start sm:max-w-lg w-full mx-auto lg:m-0 lg:max-w-full">
+                Professional laundry services with a to quality and convenience.
+                Making your life easier, one load at a time.
+              </p>
+              <div class="flex gap-3 lg:justify-start sm:justify-center">
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Quick Links
+              </h3>
+              <ul class="md:space-y-4 space-y-3 capitalize">
+                <li>
+                  <a
+                    href="about.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    pricing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="faq.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Faq
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Our Services
+              </h3>
+              <ul class="md:space-y-4 space-y-3">
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Wash & Fold
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Dry Cleaning
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Pickup & Delivery
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Special Care
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Contact Info
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-phone "></i>
+                    <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-envelope "></i>
+                    <a href="mailto:info@clenx.com">info@clenx.com</a>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-map-marker-alt "></i>
+                    <p>123 Main St, City, State</p>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-clock"></i>
+                    <p>Mon-Sun: 7AM-9PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-black mt-6 md:mt-8 py-4 md:py-6">
+            <div
+              class="flex flex-col sm:flex-row flex-wrap gap-2 justify-between sm:items-center">
+              <p>© 2025 clenx. All rights reserved.</p>
+              <ul class="flex gap-4 md:text-base text-sm">
+                <li>
+                  <a href="terms-condition.html">Terms Of Condition</a>
+                </li>
+                <li>
+                  <a href="privacy-policy.html">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- mobile menu modal  -->
+    <div
+      id="mobile-menu"
+      class="mobile-menu fixed inset-y-0 end-0 z-[100] bg-white shadow-xl transform translate-x-full transition-transform duration-300 max-w-[325px] w-full ease-in-out overflow-y-auto">
+      <div class="flex justify-between items-center p-4 border-b">
+        <a href="index.html" class="block max-w-[90px] w-full">
+          <img src="assets/images/logo.png" alt="logo" class="logo-img" />
+        </a>
+        <button
+          id="close-mobile-menu"
+          class="hover:text-primary transition-colors">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+      <nav class="p-4">
+        <ul class="space-y-2 capitalize">
+          <li>
+            <a
+              href="services.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-soap me-3"></i>Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="booking.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-calendar-check me-3"></i>booking
+            </a>
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-info-circle me-3"></i>About
+            </a>
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-tags me-3"></i>pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fa-solid fa-newspaper me-3"></i>Blog
+            </a>
+          </li>
+            <li>
+            <a
+              href="faq.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fa-solid fa-newspaper me-3"></i>faq
+            </a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-headset me-3"></i>Contact
+            </a>
+          </li>
+        </ul>
+        <div class="mt-2 py-3 px-4 rounded-2xl border space-y-2">
+          <span class="flex items-center">
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+          </span>
+          <span class="flex items-center">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:info@clenx.com">info@clenx.com</a>
+          </span>
+          <div class="flex items-center">
+            <i class="fas fa-clock me-2"></i>
+            <span class>Mon-Sat : 7AM-9PM</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

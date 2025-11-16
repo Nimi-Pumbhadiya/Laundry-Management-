@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Laundry Management | WorkDo</title>
+    <meta name="author" content="Workdo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Laundry Management by Workdo is a smart solution to manage laundry services, orders, delivery schedules, and customer requests efficiently.">
+    <meta name="keywords" content="Laundry Management, Laundry Addon, Workdo, Laundry Services, Order Management, Delivery Scheduling, Customer Laundry Requests, Laundry Dashboard">
+    <link rel="icon" href="assets/images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky w-full top-0 z-[3]">
+      <div
+        class="bg-secondary text-white py-2.5 relative overflow-hidden hidden lg:block">
+        <div
+          class="md:container w-full mx-auto px-4">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center text-sm relative z-10">
+            <div class="flex items-center gap-4 mb-2 sm:mb-0">
+              <span class="flex items-center">
+                <i class="fas fa-phone me-2"></i>
+                <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+              </span>
+              <span class="flex items-center">
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:info@clenx.com">info@clenx.com</a>
+              </span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-clock me-2"></i>
+              <span class>Mon-Sat : 7AM-9PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="md:container w-full mx-auto px-4 py-3 lg:py-4">
+        <div class="flex items-center justify-between">
+          <div
+            class="flex items-center logo-col md:max-w-[120px] max-w-[100px] w-full">
+            <a href="index.html" class="block">
+              <img src="assets/images/logo.png" alt="Laundry management"
+                class="w-full h-full object-scale-down" />
+            </a>
+          </div>
+          <div class="hidden lg:flex gap-8 capitalize font-medium">
+            <a
+              href="services.html"
+              class="hover:text-primary capitalize transition-all duration-300">Services</a>
+            <a
+              href="about.html"
+              class="hover:text-primary capitalize transition-all duration-300">About</a>
+            <a
+              href="pricing.html"
+              class="hover:text-primary capitalize transition-all duration-300">pricing</a>
+              <a
+              href="blog.html"
+              class="hover:text-primary capitalize transition-all duration-300">Blog</a>
+                      <a
+            href="faq.html"
+            class="hover:text-primary capitalize transition-all duration-300">faq</a>
+            <a
+            href="contact.html"
+            class="hover:text-primary capitalize transition-all duration-300">Contact</a>
+          </div>
+          <div class="flex items-center gap-4">
+            <a
+              href="booking.html"
+              class="hidden lg:inline-flex btn btn-secondary">
+              Book Now
+            </a>
+            <button
+              class="lg:hidden w-10 h-10 text-xl flex items-center justify-center"
+              id="mobile-menu-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+        <section class="banner-section relative lg:py-16 py-10 z-[1]">
+            <div class="absolute inset-0 w-full h-full z-[-1]">
+                <img src="assets/images/common-banner-bg.png" alt="Common Banner Background Image"
+                    class="w-full h-full object-cover rtl:scale-x-[-1]" loading="lazy">
+            </div>
+            <div class="md:container w-full mx-auto px-4">
+                <div class="text-white">
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl mb-2">article</h2>
+                    <nav class="md:text-base text-sm">
+                        <ul class="flex flex-wrap items-center justify-start capitalize">
+                            <li class="flex items-center font-medium">
+                                <a href="index.html">Home</a>
+                                <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                            </li>
+                            <li class="font-medium">article</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 lg:py-16">
+          <div class="md:container w-full mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 xl:gap-8">
+              <!-- Main Article Content -->
+              <div class="lg:col-span-3 lg:order-1 order-2">
+                <!-- Article Header -->
+                <div>
+                  <div class="rounded-2xl w-full h-44 md:h-80 lg:h-96 overflow-hidden">
+                    <img src="./assets/images/article-img.png" alt="Essential Laundry Tips for Busy Professionals"
+                      class="w-full h-full object-cover">
+                  </div>
+    
+                  <!-- Article Meta & Title -->
+                  <div class="py-4 lg:py-8">
+                    <div class="flex flex-col md:flex-row gap-2 md:gap-4 text-sm text-gray-600 mb-3">
+                      <div class="flex items-center gap-2">
+                        <i class="fas fa-calendar-alt text-primary"></i>
+                        <span>December 15, 2024</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fas fa-clock text-primary"></i>
+                        <span>5 min read</span>
+                      </div>
+                     
+                      <div class="flex items-center gap-2">
+                        <i class="fas fa-tag text-primary"></i>
+                        <span>Laundry Tips</span>
+                      </div>
+                    </div>
+    
+                    <h2 class="text-2xl md:text-4xl mb-3">
+                      Essential Laundry Tips for Busy Professionals
+                    </h2>
+    
+                    <!-- Article Content -->
+                    <div>
+                      <p class="text-gray-800  mb-3 lg:mb-6">
+                        In today's fast-paced world, busy professionals often struggle to maintain their wardrobe while
+                        juggling demanding work schedules. Whether you're rushing between meetings or working late nights,
+                        keeping your clothes fresh and professional-looking doesn't have to be a challenge.
+                      </p>
+    
+                      <h2 class="text-xl md:text-2xl mb-3">
+                        1. Sort Smart, Save Time
+                      </h2>
+                      <p class="text-gray-800  mb-3 lg:mb-6">
+                        The key to efficient laundry is proper sorting. Invest in a multi-compartment laundry hamper to
+                        separate whites, darks, and delicates as you go. This simple step eliminates the need to sort
+                        through piles of clothes on laundry day, saving you precious time.
+                      </p>
+    
+                      <div class="bg-blue-50 border-l-4 border-primary p-4 md:p-6 mb-3 lg:mb-6 rounded-2xl">
+                        <div class="flex items-start gap-3">
+                          <i class="fas fa-lightbulb text-primary text-xl "></i>
+                          <div>
+                            <h3 class="  mb-2">Pro Tip</h3>
+                            <p class="text-gray-800">Keep a small mesh bag in your hamper for delicate items like lingerie
+                              and dress socks. This prevents them from getting lost or damaged in the wash.</p>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <h2 class="text-xl md:text-2xl mb-3">
+                        2. Invest in Quality Hangers and Storage
+                      </h2>
+                      <p class="text-gray-800  mb-3 lg:mb-6">
+                        Your clothes are an investment in your professional image. Protect that investment with proper
+                        storage. Wooden or padded hangers maintain the shape of suits and dress shirts, while cedar blocks
+                        naturally repel moths and add a fresh scent to your closet.
+                      </p>
+    
+                      <div class="flex flex-col md:flex-row gap-3 md:gap-6 mb-3 lg:mb-6">
+                        <div class="bg-white border rounded-2xl p-4 lg:p-6">
+                          <div class="flex items-center gap-3 mb-3">
+                            <div class="w-12 h-12 bg-primary  rounded-full flex items-center justify-center ">
+                              <i class="fas fa-tshirt text-white text-xl"></i>
+                            </div>
+                            <h3 class="flex-1">Dress Shirts</h3>
+                          </div>
+                          <p class="text-gray-800 text-sm">Hang immediately after washing to prevent wrinkles. Use collar
+                            stays to maintain shape.</p>
+                        </div>
+                        <div class="bg-white border rounded-2xl p-4 lg:p-6">
+                          <div class="flex items-center gap-3 mb-3">
+                            <div class="w-12 h-12 bg-primary  rounded-full flex items-center justify-center ">
+                              <i class="fas fa-user-tie text-white text-xl"></i>
+                            </div>
+                            <h3 class="flex-1">Suits</h3>
+                          </div>
+                          <p class="text-gray-800 text-sm">Allow 24 hours between wears. Use suit brushes to remove surface
+                            dirt and lint.</p>
+                        </div>
+                      </div>
+    
+                      <h2 class="text-xl md:text-2xl mb-3">
+                        3. When to Choose Professional Services
+                      </h2>
+                      <p class="text-gray-800  mb-3 lg:mb-6">
+                        Sometimes, the best time-saving strategy is knowing when to delegate. Professional laundry services
+                        can be a game-changer for busy professionals, especially for:
+                      </p>
+                      <div class="bg-gray-50 rounded-2xl p-4 lg:p-6 mb-3 lg:mb-6">
+                        <div class="grid md:grid-cols-2 gap-2">
+                          <div>
+                            <h4 class="font-semibold  mb-2">Dry Clean Only Items:</h4>
+                            <ul class="text-gray-800 list-disc space-y-1 ps-5">
+                              <li> Business suits</li>
+                              <li> Silk blouses</li>
+                              <li> Wool coats</li>
+                              <li> Formal dresses</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <h4 class="font-semibold  mb-2">Time-Saving Services:</h4>
+                            <ul class="text-gray-800 list-disc space-y-1 ps-5">
+                              <li> Wash and fold service</li>
+                              <li> Pickup and delivery</li>
+                              <li> Express cleaning</li>
+                              <li> Alterations</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <h2 class="text-xl md:text-2xl   mb-3">
+                        4. Create a Weekly Routine
+                      </h2>
+                      <p class="text-gray-800  mb-3 lg:mb-6">
+                        Consistency is key to maintaining a professional wardrobe without stress. Establish a routine that
+                        works with your schedule:
+                      </p>
+    
+                      <div class="bg-primary/10 rounded-2xl p-4 lg:p-6 ">
+                        <h3 class="text-lg mb-3">Ready to Simplify Your Laundry Routine?</h3>
+                        <p class="text-gray-800 mb-3">
+                          Don't let laundry stress add to your busy schedule. Our professional laundry services are designed
+                          specifically for busy professionals like you.
+                        </p>
+                        <div class="flex flex-col md:flex-row text-center gap-3">
+                          <a href="booking.html" class="btn inline md:inline-block">
+                            <i class="fas fa-calendar-check me-2"></i>Book Service Now
+                          </a>
+                          <a href="services.html" class="btn btn-white inline md:inline-block">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <!-- Article Tags -->
+                    <div class="mt-4 pt-4 lg:mt-6 lg:pt-6 border-t border-gray-200">
+                      <div class="flex flex-wrap items-center gap-2">
+                        <span class="me-2">Tags:</span>
+                        <span
+                          class="bg-gray-100 text-gray-800 px-3 py-1 rounded-lg text-sm">#Laundry
+                          Tips</span>
+                        <span
+                          class="bg-gray-100 text-gray-800 px-3 py-1 rounded-lg text-sm">#Wardrobe</span>
+                        <span
+                          class="bg-gray-100 text-gray-800 px-3 py-1 rounded-lg text-sm">#Professional
+                          Care</span>
+                        <span
+                          class="bg-gray-100 text-gray-800 px-3 py-1 rounded-lg text-sm">#Time
+                          Saving</span>
+                      </div>
+                    </div>
+    
+                    <!-- Social Share -->
+                    <div class="mt-4 pt-4 lg:mt-6 lg:pt-6 border-t border-gray-200">
+                      <div class="flex items-center justify-between gap-1">
+                        <span>Share this article:</span>
+                        <div class="flex sm:gap-3 gap-2">
+                          <a href="javascript:void(0);"
+                            class="w-8 h-8 md:w-10 md:h-10  text-primary border border-primary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                          <a href="javascript:void(0);"
+                          class="w-8 h-8 md:w-10 md:h-10 text-primary border border-primary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                          <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                          <a href="javascript:void(0);"
+                            class="w-8 h-8 md:w-10 md:h-10 text-primary border border-primary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                            <i class="fa-brands fa-x-twitter"></i>
+                          </a>
+                          <a href="javascript:void(0);"
+                            class="w-8 h-8 md:w-10 md:h-10 text-primary border border-primary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Author Bio -->
+                <div class="bg-white rounded-2xl  border border-gray-200 p-4 lg:p-8 ">
+                  <div class="flex flex-col md:flex-row gap-3 md:gap-6">
+                    <div class="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden">
+                      <img src="assets/images/author-img.png" alt="Author" class="h-full w-full object-cover">
+                    </div>
+                    <div>
+                      <h3 class="text-xl mb-2">About the Author</h3>
+                      <h4 class="text-primary font-semibold mb-3">Sarah Johnson</h4>
+                      <p class="text-gray-800  mb-3 line-clamp-4">
+                        Sarah is a professional organizer and laundry expert with over 10 years of experience helping busy
+                        professionals streamline their daily routines. She specializes in creating efficient systems that
+                        save time while maintaining high standards of care for clothing and textiles.
+                      </p>
+                      <div class="flex gap-3">
+                        <a href="javascript:void(0);" class="text-gray-600 hover:text-primary transition-colors">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                        <a href="javascript:void(0);" class="text-gray-600 hover:text-primary transition-colors">
+                          <i class="fa-brands fa-x-twitter"></i>
+                        </a>                  
+                        <a href="javascript:void(0);" class="text-gray-600 hover:text-primary transition-colors">
+                          <i class="fa-solid fa-envelope"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>          
+              </div>
+    
+              <!-- Sidebar -->
+              <div class="lg:col-span-1 space-y-4 md:space-y-8 lg:order-2 order-1">
+                <!-- Search Widget -->
+                <div class="bg-white p-4 lg:p-6 rounded-2xl  border shadow-md">
+                  <h3 class="mb-3">Search Articles</h3>
+                  <div class="relative">
+                    <input type="text" placeholder="Search..." class="pe-8 form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary">
+                    <button class="absolute end-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-primary">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+    
+
+    
+                <!-- Recent Posts Widget -->
+                <div class="bg-white p-4 lg:p-6 rounded-2xl  border shadow-md">
+                  <h3 class="mb-3">Recent Posts</h3>
+                  <div>
+                    <div class="flex gap-3 py-4 border-b border-gray-200">
+                      <div class="w-16 h-16 rounded-lg flex-shrink-0 overflow-hidden">
+                        <img src="assets/images/blog-img04.png" alt="Recent"
+                        class="w-full h-full  object-cover ">
+                      </div>
+                      <div>
+                        <h4
+                          class="font-medium  text-sm md:text-base mb-1 hover:text-primary cursor-pointer transition-colors line-clamp-2">
+                          Fabric Care Guide for Different Materials
+                        </h4>
+                        <p class="text-xs text-gray-500">Dec 08, 2024</p>
+                      </div>
+                    </div>
+    
+                    <div class="flex gap-3 py-4 border-b border-gray-200">
+                      <div class="w-16 h-16 rounded-lg flex-shrink-0 overflow-hidden">
+                        <img src="assets/images/blog-img05.png" alt="Recent"
+                        class="w-full h-full  object-cover ">
+                      </div>
+                      <div>
+                        <h4
+                          class="font-medium  text-sm md:text-base mb-1 hover:text-primary cursor-pointer transition-colors line-clamp-2">
+                          Why Choose Professional Laundry Services
+                        </h4>
+                        <p class="text-xs text-gray-500">Dec 01, 2024</p>
+                      </div>
+                    </div>
+    
+                    <div class="flex gap-3 py-4 border-b border-gray-200">
+                      <div class="w-16 h-16 rounded-lg flex-shrink-0 overflow-hidden">
+                        <img src="assets/images/blog-img06.png" alt="Recent"
+                        class="w-full h-full  object-cover ">
+                      </div>
+                      <div>
+                        <h4
+                          class="font-medium  text-sm md:text-base mb-1 hover:text-primary cursor-pointer transition-colors line-clamp-2">
+                          Master the Art of Wrinkle-Free Clothes
+                        </h4>
+                        <p class="text-xs text-gray-500">Nov 27, 2024</p>
+                      </div>
+                    </div>
+    
+                    <div class="flex gap-3 pt-4">
+                      <div class="w-16 h-16 rounded-lg flex-shrink-0 overflow-hidden">
+                        <img src="assets/images/blog-img01.png" alt="Recent"
+                        class="w-full h-full  object-cover ">
+                      </div>
+                      <div>
+                        <h4
+                          class="font-medium  text-sm md:text-base mb-1 hover:text-primary cursor-pointer transition-colors line-clamp-2">
+                          Quick Stain Removal Techniques
+                        </h4>
+                        <p class="text-xs text-gray-500">Nov 20, 2024</p>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+    
+                <!-- Newsletter Widget -->
+                <div class="bg-primary/10 p-4 md:p-6 rounded-2xl border">
+                  <div class="text-center">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                      <i class="fas fa-envelope text-primary text-xl md:text-2xl"></i>
+                    </div>
+                    <h3 class="mb-2">Stay Updated</h3>
+                    <p class="text-gray-800 text-sm mb-3">
+                      Get the latest laundry tips and special offers delivered to your inbox.
+                    </p>
+                    <form class="space-y-3">
+                      <input type="email" placeholder="Your email address"
+                        class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary">
+                      <button type="submit" class="w-full btn">
+                        <i class="fas fa-paper-plane me-2"></i>Subscribe
+                      </button>
+                    </form>
+                  </div>
+                </div>
+    
+                <!-- Contact CTA Widget -->
+                <div class="bg-secondary text-white p-4 md:p-6 rounded-2xl">
+                  <div class="text-center">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <i class="fas fa-headset text-white text-xl md:text-2xl"></i>
+                    </div>
+                    <h3 class="mb-2">Need Help?</h3>
+                    <p class="text-white/90 text-sm mb-3">
+                      Have questions about our services? Our team is here to help!
+                    </p>
+                    <div class="space-y-3">
+                      <a href="contact.html" class="btn btn-white w-full border-0">
+                        <i class="fas fa-phone me-2"></i>Contact Us
+                      </a>
+                      <a href="booking.html"
+                        class="btn w-full">
+                        <i class="fas fa-calendar-check me-2"></i>Book Service
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <!-- Footer -->
+     <footer
+      class="md:pt-44 pt-24 relative overflow-hidden">
+    <div class="absolute top-0 start-0 w-full md:h-[155px] h-[60px]">
+      <img src="assets/images/footer-bg.png" alt="Footer Image" loading="lazy" class="w-full h-full object-cover">
+    </div>
+      <div class="bg-light pt-8 md:-mt-8 -mt-10">
+        <div class="md:container w-full mx-auto px-4">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 xl:gap-12">
+            <div class="space-y-4 sm:col-span-3 lg:col-span-1">
+              <div
+                class="flex items-center footer-logo max-w-[110px] lg:max-w-[160px] w-full sm:mx-auto lg:m-0">
+                <a href="index.html" class="block transition-transform duration-300">
+                  <img src="assets/images/logo.png" alt="footer-logo" />
+                </a>
+              </div>
+              <p
+                class="sm:text-center lg:text-start sm:max-w-lg w-full mx-auto lg:m-0 lg:max-w-full">
+                Professional laundry services with a to quality and convenience.
+                Making your life easier, one load at a time.
+              </p>
+              <div class="flex gap-3 lg:justify-start sm:justify-center">
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Quick Links
+              </h3>
+              <ul class="md:space-y-4 space-y-3 capitalize">
+                <li>
+                  <a
+                    href="about.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    pricing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="faq.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Faq
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Our Services
+              </h3>
+              <ul class="md:space-y-4 space-y-3">
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Wash & Fold
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Dry Cleaning
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Pickup & Delivery
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Special Care
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Contact Info
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-phone "></i>
+                    <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-envelope "></i>
+                    <a href="mailto:info@clenx.com">info@clenx.com</a>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-map-marker-alt "></i>
+                    <p>123 Main St, City, State</p>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-clock"></i>
+                    <p>Mon-Sun: 7AM-9PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-black mt-6 md:mt-8 py-4 md:py-6">
+            <div
+              class="flex flex-col sm:flex-row flex-wrap gap-2 justify-between sm:items-center">
+              <p>© 2025 clenx. All rights reserved.</p>
+              <ul class="flex gap-4 md:text-base text-sm">
+                <li>
+                  <a href="terms-condition.html">Terms Of Condition</a>
+                </li>
+                <li>
+                  <a href="privacy-policy.html">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- mobile menu modal  -->
+    <div
+      id="mobile-menu"
+      class="mobile-menu fixed inset-y-0 end-0 z-[100] bg-white shadow-xl transform translate-x-full transition-transform duration-300 max-w-[325px] w-full ease-in-out overflow-y-auto">
+      <div class="flex justify-between items-center p-4 border-b">
+        <a href="index.html" class="block max-w-[90px] w-full">
+          <img src="assets/images/logo.png" alt="logo" class="logo-img" />
+        </a>
+        <button
+          id="close-mobile-menu"
+          class="hover:text-primary transition-colors">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+      <nav class="p-4">
+        <ul class="space-y-2 capitalize">
+          <li>
+            <a
+              href="services.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-soap me-3"></i>Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="booking.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-calendar-check me-3"></i>booking
+            </a>
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-info-circle me-3"></i>About
+            </a>
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-tags me-3"></i>pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fa-solid fa-newspaper me-3"></i>Blog
+            </a>
+          </li>
+               <li>
+            <a
+              href="faq.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fa-solid fa-newspaper me-3"></i>faq
+            </a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-headset me-3"></i>Contact
+            </a>
+          </li>
+        </ul>
+        <div class="mt-2 py-3 px-4 rounded-2xl border space-y-2">
+          <span class="flex items-center">
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+          </span>
+          <span class="flex items-center">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:info@clenx.com">info@clenx.com</a>
+          </span>
+          <div class="flex items-center">
+            <i class="fas fa-clock me-2"></i>
+            <span class>Mon-Sat : 7AM-9PM</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

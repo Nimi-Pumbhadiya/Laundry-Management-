@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Laundry Management | WorkDo</title>
+    <meta name="author" content="Workdo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Laundry Management by Workdo is a smart solution to manage laundry services, orders, delivery schedules, and customer requests efficiently.">
+    <meta name="keywords" content="Laundry Management, Laundry Addon, Workdo, Laundry Services, Order Management, Delivery Scheduling, Customer Laundry Requests, Laundry Dashboard">
+    <link rel="icon" href="assets/images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky w-full top-0 z-[3]">
+      <div
+        class="bg-secondary text-white py-2.5 relative overflow-hidden hidden lg:block">
+        <div
+          class="md:container w-full mx-auto px-4">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center text-sm relative z-10">
+            <div class="flex items-center gap-4 mb-2 sm:mb-0">
+              <span class="flex items-center">
+                <i class="fas fa-phone me-2"></i>
+                <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+              </span>
+              <span class="flex items-center">
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:info@clenx.com">info@clenx.com</a>
+              </span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-clock me-2"></i>
+              <span class>Mon-Sat : 7AM-9PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <nav
+        class="md:container w-full mx-auto px-4 py-3 lg:py-4">
+        <div class="flex items-center justify-between">
+          <div
+            class="flex items-center logo-col md:max-w-[120px] max-w-[100px] w-full">
+            <a href="index.html" class="block">
+              <img src="assets/images/logo.png" alt="Laundry management"
+                class="w-full h-full object-scale-down" />
+            </a>
+          </div>
+          <div class="hidden lg:flex gap-8 capitalize font-medium">
+            <a
+              href="services.html"
+              class="hover:text-primary capitalize transition-all duration-300">Services</a>
+            <a
+              href="about.html"
+              class="hover:text-primary capitalize transition-all duration-300">About</a>
+            <a
+              href="pricing.html"
+              class="hover:text-primary capitalize transition-all duration-300">pricing</a>
+              <a
+              href="blog.html"
+              class="hover:text-primary capitalize transition-all duration-300">Blog</a>
+                      <a
+            href="faq.html"
+            class="hover:text-primary capitalize transition-all duration-300">faq</a>
+            <a
+            href="contact.html"
+            class="hover:text-primary capitalize transition-all duration-300">Contact</a>
+          </div>
+          <div class="flex items-center gap-4">
+            <a
+              href="booking.html"
+              class="hidden lg:inline-flex btn btn-secondary">
+              Book Now
+            </a>
+            <button
+              class="lg:hidden w-10 h-10 text-xl flex items-center justify-center"
+              id="mobile-menu-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+        <main>
+        <section class="banner-section relative lg:py-16 py-10 z-[1]">
+            <div class="absolute inset-0 w-full h-full z-[-1]">
+                <img src="assets/images/common-banner-bg.png" alt="Common Banner Background Image"
+                    class="w-full h-full object-cover rtl:scale-x-[-1]" loading="lazy">
+            </div>
+            <div class="md:container w-full mx-auto px-4">
+                <div class="text-white">
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl mb-2">booking</h2>
+                    <nav class="md:text-base text-sm">
+                        <ul class="flex flex-wrap items-center justify-start capitalize">
+                            <li class="flex items-center font-medium">
+                                <a href="index.html">Home</a>
+                                <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                            </li>
+                            <li class="font-medium">booking</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 lg:py-16  booking-section">
+            <div class="md:container mx-auto px-4 ">
+                <div class="max-w-4xl mx-auto">
+
+                    <!-- Form Steps -->
+                    <div class="bg-white rounded-2xl border shadow-md p-4 md:p-6 relative overflow-hidden">
+
+                        <div class="mb-6 lg:mb-12 relative">
+
+                            <!-- Progress Steps -->
+                            <div class="relative">
+                                <h2
+                                    class="text-xl sm:text-3xl tech-font font-bold text-secondary mb-4 lg:mb-6 text-center">
+                                    Book Your Laundry Service
+                                </h2>
+                                <div class="flex items-center justify-between relative">
+                                    <!-- Progress Line -->
+                                    <div
+                                        class="absolute top-1/2 md:top-[30%] start-0 w-[92%] mx-auto end-0 h-1 lg:h-2 bg-gray-200 rounded-full -translate-y-1/2">
+                                        <div
+                                            class="h-full bg-primary rounded-full transition-all duration-500 ease-in-out progress-line w-0">
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 1 -->
+                                    <div class="step-indicator flex flex-col items-center relative">
+                                        <div
+                                            class="w-10 h-10 lg:w-16 sm:w-14 sm:h-14 lg:h-16 rounded-full bg-white border-2 md:border-4 border-primary flex items-center justify-center md:mb-3 transition-all duration-300 group shadow-lg">
+                                            <div
+                                                class="w-7 h-7 lg:w-12 sm:w-10 sm:h-10 lg:h-12 rounded-full bg-primary flex items-center justify-center text-white font-semibold transition-transform">
+                                                <i class="fas fa-tshirt text-md lg:text-xl"></i>
+                                            </div>
+                                        </div>
+                                        <span class="text-sm font-semibold text-primary hidden md:block">Service</span>
+                                        <span class="text-xs text-gray-600 mt-1 hidden md:block font-semibold">Select
+                                            Service</span>
+                                    </div>
+
+                                    <!-- Step 2 -->
+                                    <div class="step-indicator flex flex-col items-center relative">
+                                        <div
+                                            class="w-10 h-10 lg:w-16 sm:w-14 sm:h-14 lg:h-16 rounded-full bg-white border-2 md:border-4 border-gray-200 flex items-center justify-center md:mb-3 transition-all duration-300 group shadow-lg">
+                                            <div
+                                                class="w-7 h-7 lg:w-12 sm:w-10 sm:h-10 lg:h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 font-semibold transition-transform">
+                                                <i class="fas fa-user text-md lg:text-xl"></i>
+                                            </div>
+                                        </div>
+                                        <span class="text-sm font-semibold text-gray-500 hidden md:block">Details</span>
+                                        <span class="text-xs text-gray-600 mt-1 hidden md:block font-semibold">Your
+                                            Information</span>
+                                    </div>
+
+                                    <!-- Step 3 -->
+                                    <div class="step-indicator flex flex-col items-center relative">
+                                        <div
+                                            class="w-10 h-10 lg:w-16 sm:w-14 sm:h-14 lg:h-16 rounded-full bg-white border-2 md:border-4 border-gray-200 flex items-center justify-center md:mb-3 transition-all duration-300 group shadow-lg">
+                                            <div
+                                                class="w-7 h-7 lg:w-12 sm:w-10 sm:h-10 lg:h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 font-semibold transition-transform">
+                                                <i class="fas fa-calendar text-md lg:text-xl"></i>
+                                            </div>
+                                        </div>
+                                        <span
+                                            class="text-sm font-semibold text-gray-500 hidden md:block">Schedule</span>
+                                        <span class="text-xs text-gray-600 mt-1 hidden md:block font-semibold">Pickup &
+                                            Delivery</span>
+                                    </div>
+
+                                    <!-- Step 4 -->
+                                    <div class="step-indicator flex flex-col items-center relative">
+                                        <div
+                                            class="w-10 h-10 lg:w-16 sm:w-14 sm:h-14 lg:h-16 rounded-full bg-white border-2 md:border-4 border-gray-200 flex items-center justify-center md:mb-3 transition-all duration-300 group shadow-lg">
+                                            <div
+                                                class="w-7 h-7 lg:w-12 sm:w-10 sm:h-10 lg:h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 font-semibold transition-transform">
+                                                <i class="fas fa-credit-card text-md lg:text-xl"></i>
+                                            </div>
+                                        </div>
+                                        <span class="text-sm font-semibold text-gray-500 hidden md:block">Payment</span>
+                                        <span class="text-xs text-gray-600 mt-1 hidden md:block font-semibold">Secure
+                                            Payment</span>
+                                    </div>
+
+                                    <!-- Step 5 -->
+                                    <div class="step-indicator flex flex-col items-center relative">
+                                        <div
+                                            class="w-10 h-10 lg:w-16 sm:w-14 sm:h-14 lg:h-16 rounded-full bg-white border-2 md:border-4 border-gray-200 flex items-center justify-center  md:mb-3 transition-all duration-300 group shadow-lg">
+                                            <div
+                                                class="w-7 h-7 lg:w-12 sm:w-10 sm:h-10 lg:h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 font-semibold transition-transform">
+                                                <i class="fas fa-check text-md lg:text-xl"></i>
+                                            </div>
+                                        </div>
+                                        <span class="text-sm font-semibold text-gray-500 hidden md:block">Confirm</span>
+                                        <span class="text-xs text-gray-600 mt-1 hidden md:block font-semibold">Booking
+                                            Complete</span>
+                                    </div>
+                                </div>
+
+                                <!-- Progress Status -->
+                                <div class="text-center mt-4 sm:mt-6 lg:mt-8">
+                                    <div
+                                        class="inline-flex items-center px-3 md:px-6 py-3 rounded-full bg-white border border-gray-200 text-primary text-sm font-semibold progress-status">
+                                        <span class="w-3 h-3 bg-primary rounded-full me-3 animate-pulse"></span>
+                                        Step 1 of 5: Select Your Service
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step Content -->
+                        <div>
+                            <!-- Step 1: Service Selection -->
+                            <div id="step1" class="step-content animate-fade-in">
+                                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-secondary mb-4 lg:mb-6">Choose
+                                    Your Service</h2>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-5">
+                                    <!-- Wash & Fold Service -->
+                                    <div class="service-card cursor-pointer group" data-service="wash-fold" data-price="2.99">
+                                        <div
+                                            class="bg-white rounded-2xl border-2 border-gray-200 p-4 hover:border-primary transition-all relative overflow-hidden h-full">
+                                            <div class="flex items-center justify-between mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center me-4 service-card-icon flex-shrink-0">
+                                                        <i class="fas fa-tshirt text-primary text-xl"></i>
+                                                    </div>
+                                                    <h4 class="text-lg font-semibold text-secondary">Wash & Fold</h4>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-800 md:mb-4 mb-3 line-clamp-2">Professional washing,
+                                                drying, and folding service for your everyday clothes.</p>
+                                            <span class="text-primary font-bold">$2.99/lb</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Dry Cleaning Service -->
+                                    <div class="service-card cursor-pointer group" data-service="dry-cleaning" data-price="5.99">
+                                        <div
+                                            class="bg-white rounded-2xl border-2 border-gray-200 p-4 hover:border-primary transition-all relative overflow-hidden h-full">
+                                            <div class="flex items-center justify-between mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center me-4 service-card-icon flex-shrink-0">
+                                                        <i class="fas fa-spray-can text-primary text-xl"></i>
+                                                    </div>
+                                                    <h4 class="text-lg font-semibold text-secondary">Dry Cleaning</h4>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-800 md:mb-4 mb-3 line-clamp-2">Expert dry cleaning for
+                                                your delicate and special the cloth in garments.</p>
+                                            <span class="text-primary font-bold">$5.99/item</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ironing Service -->
+                                    <div class="service-card cursor-pointer group" data-service="ironing" data-price="3.99">
+                                        <div
+                                            class="bg-white rounded-2xl border-2 border-gray-200 p-4 hover:border-primary transition-all relative overflow-hidden h-full">
+                                            <div class="flex items-center justify-between mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center me-4 service-card-icon flex-shrink-0">
+                                                        <i class="fas fa-location-pin text-primary text-xl"></i>
+                                                    </div>
+                                                    <h4 class="text-lg font-semibold text-secondary">Professional Ironing</h4>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-800 md:mb-4 mb-3 line-clamp-2">Expert ironing and
+                                                pressing for perfectly crisp, clean, and professional clothes.</p>
+                                            <span class="text-primary font-bold">$3.99/item</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Curtain Cleaning -->
+                                    <div class="service-card cursor-pointer group" data-service="curtain-cleaning" data-price="8.99">
+                                        <div
+                                            class="bg-white rounded-2xl border-2 border-gray-200 p-4 hover:border-primary transition-all relative overflow-hidden h-full">
+                                            <div class="flex items-center justify-between mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center me-4 service-card-icon flex-shrink-0">
+                                                        <i class="fas fa-home text-primary text-xl"></i>
+                                                    </div>
+                                                    <h4 class="text-lg font-semibold text-secondary">Curtain Cleaning</h4>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-800 md:mb-4 mb-3 line-clamp-2">Specialized deep cleaning
+                                                for your delicate curtains and elegant drapes.</p>
+                                            <span class="text-primary font-bold">$29.99/pair</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Wedding Dress Cleaning -->
+                                    <div class="service-card cursor-pointer group">
+                                        <div
+                                            class="bg-white rounded-2xl border-2 border-gray-200 p-4 hover:border-primary transition-all relative overflow-hidden h-full">
+                                            <div class="flex items-center justify-between mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center me-4 service-card-icon flex-shrink-0">
+                                                        <i class="fas fa-female text-primary text-xl"></i>
+                                                    </div>
+                                                    <h4 class="text-lg font-semibold text-secondary">Wedding Dress Care</h4>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-800 md:mb-4 mb-3 line-clamp-2">Specialized cleaning and
+                                                preservation for your with wedding dress.</p>
+                                            <span class="text-primary font-bold">$149.99</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Leather Care -->
+                                    <div class="service-card cursor-pointer group">
+                                        <div
+                                            class="bg-white rounded-2xl border-2 border-gray-200 p-4 hover:border-primary transition-all relative overflow-hidden h-full">
+                                            <div class="flex items-center justify-between mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center me-4 service-card-icon flex-shrink-0">
+                                                        <i class="fas fa-shoe-prints text-primary text-xl"></i>
+                                                    </div>
+                                                    <h4 class="text-lg font-semibold text-secondary">Leather Care</h4>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-800 md:mb-4 mb-3 line-clamp-2">Specialized cleaning and
+                                                conditioning for Luxury in leather items.</p>
+                                            <span class="text-primary font-bold">$39.99/item</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6 lg:mt-8 flex justify-center">
+                                    <button class="btn next-step" data-next="2">
+                                        Continue <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Customer Details -->
+                            <div id="step2" class="step-content hidden">
+                                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-secondary mb-4 lg:mb-6">Your
+                                    Details</h2>
+                                <form id="step2-form">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Full
+                                                Name</label>
+                                            <input type="text"
+                                                class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary"
+                                                placeholder="Enter your full name" required>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                            <input type="email"
+                                                class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary"
+                                                placeholder="Enter your email" required>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone
+                                                Number</label>
+                                            <input type="tel"
+                                                class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary"
+                                                placeholder="Enter your phone number" required>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Address</label>
+                                            <input type="text"
+                                                class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary"
+                                                placeholder="Enter your address" required>
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Number of
+                                                Items</label>
+                                            <input type="text"
+                                                class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary"
+                                                placeholder="Enter the number of items" required>
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Special
+                                                Instructions</label>
+                                            <textarea
+                                                class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary"
+                                                rows="3" placeholder="Any special requirements?"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="mt-6 lg:mt-8 flex justify-between">
+                                    <button class="prev-step btn btn-secondary" data-prev="1">
+                                        <i class="fas fa-arrow-left"></i> Back
+                                    </button>
+                                    <button type="submit" form="step2-form" class="next-step btn" data-next="3">
+                                        Continue <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Schedule -->
+                            <div id="step3" class="step-content hidden">
+                                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-secondary mb-4 lg:mb-6">Pickup
+                                    & Delivery Schedule</h2>
+                                <form id="step3-form">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Pickup
+                                                Date</label>
+                                            <input type="date"
+                                                class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary"
+                                                required>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Pickup
+                                                Time</label>
+                                            <select
+                                                class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary"
+                                                required>
+                                                <option value="">Select time</option>
+                                                <option value="9:00 AM">9:00 AM</option>
+                                                <option value="10:00 AM">10:00 AM</option>
+                                                <option value="11:00 AM">11:00 AM</option>
+                                                <option value="12:00 PM">12:00 PM</option>
+                                                <option value="1:00 PM">1:00 PM</option>
+                                                <option value="2:00 PM">2:00 PM</option>
+                                                <option value="3:00 PM">3:00 PM</option>
+                                                <option value="4:00 PM">4:00 PM</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Delivery
+                                                Date</label>
+                                            <input type="date"
+                                                class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary"
+                                                required>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Delivery
+                                                Time</label>
+                                            <select
+                                                class="form-input w-full px-3 py-2  rounded-lg border border-gray-300 focus:border-primary"
+                                                required>
+                                                <option value="">Select time</option>
+                                                <option value="9:00 AM">9:00 AM</option>
+                                                <option value="10:00 AM">10:00 AM</option>
+                                                <option value="11:00 AM">11:00 AM</option>
+                                                <option value="12:00 PM">12:00 PM</option>
+                                                <option value="1:00 PM">1:00 PM</option>
+                                                <option value="2:00 PM">2:00 PM</option>
+                                                <option value="3:00 PM">3:00 PM</option>
+                                                <option value="4:00 PM">4:00 PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="mt-6 lg:mt-8 flex justify-between">
+                                    <button class="prev-step btn btn-secondary" data-prev="2">
+                                        <i class="fas fa-arrow-left"></i> Back
+                                    </button>
+                                    <button type="submit" form="step3-form" class="next-step btn" data-next="4">
+                                        Continue <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 4: Payment -->
+                            <div id="step4" class="step-content hidden">
+                                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-secondary mb-4 lg:mb-6">
+                                    Payment Method</h2>
+                                <div class="space-y-4">
+                                    <div class="payment-method cursor-pointer">
+                                        <div
+                                            class="bg-white rounded-2xl border-2 border-gray-200 p-4 sm:p-6 hover:border-primary transition-all">
+                                            <div class="flex items-center gap-3">
+                                                <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M22 3.56641V2.40625C22 1.07731 20.9227 0 19.5938 0H2.40625C1.07731 0 0 1.07731 0 2.40625V3.56641C0 3.68504 0.096207 3.78125 0.214844 3.78125H21.7852C21.9038 3.78125 22 3.68504 22 3.56641Z"
+                                                        fill="black" />
+                                                    <path
+                                                        d="M0 5.37109V12.7188C0 14.0477 1.07731 15.125 2.40625 15.125H19.5938C20.9227 15.125 22 14.0477 22 12.7188V5.37109C22 5.25246 21.9038 5.15625 21.7852 5.15625H0.214844C0.096207 5.15625 0 5.25246 0 5.37109ZM5.5 11C5.5 11.3797 5.19217 11.6875 4.8125 11.6875H4.125C3.74533 11.6875 3.4375 11.3797 3.4375 11V10.3125C3.4375 9.93283 3.74533 9.625 4.125 9.625H4.8125C5.19217 9.625 5.5 9.93283 5.5 10.3125V11Z"
+                                                        fill="black" />
+                                                </svg>
+
+                                                <div>
+                                                    <h4
+                                                        class="text-[16px] sm:text-lg font-semibold text-secondary mb-1">
+                                                        Credit Card</h4>
+                                                    <p class="text-gray-600">Pay securely with your credit card</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="payment-method cursor-pointer">
+                                        <div
+                                            class="bg-white rounded-2xl border-2 border-gray-200 p-4 sm:p-6 hover:border-primary transition-all">
+                                            <div class="flex items-center gap-3">
+                                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1.36031 0H15.9654C16.7089 0 17.3257 0.616806 17.3257 1.36028V15.9709C17.3257 16.7143 16.7089 17.3311 15.9654 17.3311H1.36031C0.616842 17.3311 3.65947e-05 16.7143 3.65947e-05 15.9709V1.36578C-0.0054706 0.616805 0.611335 0 1.36031 0Z"
+                                                        fill="#FED0A2" />
+                                                    <path
+                                                        d="M10.067 5.85414L8.65712 5.02806L7.24728 5.85414C7.14815 5.92023 7.02148 5.83762 7.02148 5.72197V0H10.2928V5.72197C10.3093 5.85414 10.1606 5.92023 10.067 5.85414Z"
+                                                        fill="#FCB43B" />
+                                                    <path d="M1.86133 13.1125H6.44882V15.4311H1.86133V13.1125Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M7.96631 10.2156L18.8989 4.65726L21.9999 10.7565L11.0673 16.3149L7.96631 10.2156Z"
+                                                        fill="#7CC250" />
+                                                    <path
+                                                        d="M17.1272 6.53149L10.5516 9.87436C10.8821 10.5242 10.6012 11.3283 9.92383 11.6752L11.0473 13.8836C11.7247 13.5366 12.5397 13.7845 12.8702 14.4343L19.4458 11.0914C19.1153 10.4416 19.3962 9.63755 20.0736 9.2906L18.9501 7.08221C18.2782 7.43467 17.4577 7.18134 17.1272 6.53149ZM15.8991 12.2535C14.9904 12.7161 13.856 12.2975 13.3603 11.3228C12.8647 10.348 13.2006 9.18045 14.1038 8.71785C15.0125 8.25524 16.147 8.67379 16.6426 9.64856C17.1382 10.6288 16.8023 11.7909 15.8991 12.2535Z"
+                                                        fill="#B0DA96" />
+                                                    <path d="M8.86133 10.4856H21.1313V17.331H8.86133V10.4856Z"
+                                                        fill="#7CC250" />
+                                                    <path
+                                                        d="M18.6915 11.3503H11.3119C11.3119 12.0828 10.6951 12.6721 9.93506 12.6721V15.1448C10.6951 15.1448 11.3119 15.7341 11.3119 16.4665H18.686C18.686 15.7341 19.3028 15.1448 20.0628 15.1448V12.6721C19.3028 12.6776 18.6915 12.0773 18.6915 11.3503ZM15.0017 15.8938C13.9773 15.8938 13.1568 15.0071 13.1568 13.9112C13.1568 12.8153 13.9828 11.9286 15.0017 11.9286C16.026 11.9286 16.8466 12.8153 16.8466 13.9112C16.8466 15.0071 16.015 15.8938 15.0017 15.8938Z"
+                                                        fill="#B0DA96" />
+                                                    <path
+                                                        d="M11.5429 17.3311H8.29917C8.04033 17.3311 7.83105 17.1218 7.83105 16.863V16.6427C7.83105 16.3838 8.04033 16.1746 8.29917 16.1746H11.5429C11.8017 16.1746 12.011 16.3838 12.011 16.6427V16.863C12.011 17.1218 11.8017 17.3311 11.5429 17.3311Z"
+                                                        fill="#FCB43B" />
+                                                    <path
+                                                        d="M11.5429 16.1802H8.29917C8.04033 16.1802 7.83105 15.9709 7.83105 15.7121V15.4918C7.83105 15.233 8.04033 15.0237 8.29917 15.0237H11.5429C11.8017 15.0237 12.011 15.233 12.011 15.4918V15.7121C12.011 15.9709 11.8017 16.1802 11.5429 16.1802Z"
+                                                        fill="#FDC362" />
+                                                    <path
+                                                        d="M11.5429 15.0567H8.29917C8.04033 15.0567 7.83105 14.8474 7.83105 14.5885V14.3683C7.83105 14.1094 8.04033 13.9001 8.29917 13.9001H11.5429C11.8017 13.9001 12.011 14.1094 12.011 14.3683V14.5885C12.011 14.8474 11.8017 15.0567 11.5429 15.0567Z"
+                                                        fill="#FCB43B" />
+                                                    <path
+                                                        d="M15.6957 17.3311H12.452C12.1932 17.3311 11.9839 17.1218 11.9839 16.863V16.6427C11.9839 16.3838 12.1932 16.1746 12.452 16.1746H15.6957C15.9546 16.1746 16.1638 16.3838 16.1638 16.6427V16.863C16.1638 17.1218 15.9546 17.3311 15.6957 17.3311Z"
+                                                        fill="#FDC362" />
+                                                    <path
+                                                        d="M15.6957 16.1802H12.452C12.1932 16.1802 11.9839 15.9709 11.9839 15.7121V15.4918C11.9839 15.233 12.1932 15.0237 12.452 15.0237H15.6957C15.9546 15.0237 16.1638 15.233 16.1638 15.4918V15.7121C16.1638 15.9709 15.9546 16.1802 15.6957 16.1802Z"
+                                                        fill="#FCB43B" />
+                                                </svg>
+                                                <div>
+                                                    <h4 class="text-[16px] sm:text-lg font-semibold text-secondary">Cash
+                                                        on Delivery</h4>
+                                                    <p class="text-gray-600">Pay when your clothes are delivered</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="payment-method cursor-pointer">
+                                        <div
+                                            class="bg-white rounded-2xl border-2 border-gray-200 p-4 sm:p-6 hover:border-primary transition-all">
+                                            <div class="flex items-center gap-3">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M18.4283 5.68391C18.4655 5.38119 18.485 5.07298 18.485 4.76021C18.485 2.13125 16.3538 0 13.7248 0H5.76945C5.26903 0 4.8418 0.361367 4.75878 0.85482L1.82745 18.2776C1.72226 18.9028 2.2042 19.4725 2.83812 19.4725H5.74758C6.24799 19.4725 6.68326 19.1114 6.76624 18.6179C6.76624 18.6179 6.77109 18.589 6.77986 18.5369H6.7799L6.37445 20.9468C6.28181 21.4978 6.70655 22 7.26528 22H9.81062C10.2517 22 10.6283 21.6815 10.7014 21.2465L11.4245 16.9488C11.5492 16.2079 12.1906 15.6655 12.9418 15.6655H13.6105C17.2426 15.6655 20.187 12.721 20.187 9.08892C20.187 7.68346 19.4923 6.4411 18.4283 5.68391Z"
+                                                        fill="#002987" />
+                                                    <path
+                                                        d="M18.4283 5.68384C17.9731 9.38684 14.8171 12.2542 10.991 12.2542H8.77105C8.26999 12.2542 7.83726 12.5879 7.70152 13.0598L6.37456 20.9467C6.28187 21.4977 6.70662 21.9999 7.26534 21.9999H9.81068C10.2518 21.9999 10.6283 21.6814 10.7015 21.2465L11.4246 16.9487C11.5492 16.2079 12.1906 15.6654 12.9419 15.6654H13.6105C17.2427 15.6654 20.1871 12.721 20.1871 9.08885C20.1871 7.68339 19.4924 6.44103 18.4283 5.68384Z"
+                                                        fill="#0085CC" />
+                                                    <path
+                                                        d="M8.77124 12.2542H10.9912C14.8173 12.2542 17.9733 9.38683 18.4285 5.68387C17.7458 5.19806 16.9115 4.91138 16.0098 4.91138H10.2155C9.55576 4.91138 8.99248 5.38777 8.883 6.03832L7.70166 13.0598C7.8374 12.5879 8.27018 12.2542 8.77124 12.2542Z"
+                                                        fill="#00186A" />
+                                                </svg>
+                                                <div>
+                                                    <h4 class="text-[16px] sm:text-lg font-semibold text-secondary">
+                                                        PayPal</h4>
+                                                    <p class="text-gray-600">Pay securely with PayPal</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- PayPal Details -->
+                                        <div class="paypal-details mt-4 p-4 sm:p-6 bg-gray-50 rounded-lg hidden">
+                                            <div class="space-y-4">
+                                                <div class="flex items-center text-gray-600">
+                                                    <i class="fas fa-lock text-primary me-3"></i>
+                                                    <span>Secure payment through PayPal</span>
+                                                </div>
+                                                <div class="flex items-center text-gray-600">
+                                                    <i class="fas fa-globe text-primary me-3"></i>
+                                                    <span>Available in multiple currencies</span>
+                                                </div>
+                                                <button class="btn w-full sm:w-auto">
+                                                    <i class="fab fa-paypal me-2"></i> Pay with PayPal
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6 lg:mt-8 flex justify-between">
+                                    <button class="prev-step btn btn-secondary" data-prev="3">
+                                        <i class="fas fa-arrow-left"></i> Back
+                                    </button>
+                                    <button class="next-step btn" data-next="5">
+                                        Continue <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 5: Confirmation -->
+                            <div id="step5" class="step-content hidden">
+                                <div class="text-center">
+                                    <!-- Animated Success Icon -->
+                                    <div
+                                        class="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 mx-auto mb-4 md:mb-6">
+                                        <div class="absolute inset-0 bg-green-100 rounded-full animate-pulse"></div>
+                                        <div
+                                            class="absolute inset-2 bg-white rounded-full flex items-center justify-center">
+                                            <div
+                                                class="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-green-500 rounded-full flex items-center justify-center">
+                                                <i class="fas fa-check sm:text-4xl text-2xl text-white"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Confirmation Message -->
+                                    <h2
+                                        class="text-xl md:text-2xl lg:text-3xl font-bold text-secondary mb-4 lg:mb-6 animate-fade-in">
+                                        Booking Confirmed!
+                                    </h2>
+                                    <p class="text-gray-700 mb-3 md:mb-6 animate-fade-in-delay">
+                                        Thank you for choosing our service. Your order has been successfully placed.
+                                    </p>
+
+                                    <!-- Order Details Card -->
+                                    <div class="bg-white rounded-2xl p-4 md:p-6 mb-6 max-w-xl mx-auto transform border">
+                                        <h3 class="text-lg lg:text-xl font-semibold text-secondary border-b pb-3 lg:pb-4 mb-6">Booking Details</h3>
+                                        <div class="grid grid-cols-1 gap-2 ">
+                                            <!-- Dynamic content will be inserted here by JavaScript -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Action Buttons -->
+                                    <div class="flex flex-wrap justify-center gap-4">
+                                        <button class="btn">
+                                            <i class="fas fa-download group-hover:animate-bounce"></i> Download Receipt
+                                        </button>
+                                        <button class="btn btn-secondary">
+                                            <i class="fas fa-share-alt group-hover:rotate-12 transition-transform"></i>
+                                            Share Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+     <footer
+      class="md:pt-44 pt-24 relative overflow-hidden">
+    <div class="absolute top-0 start-0 w-full md:h-[155px] h-[60px]">
+      <img src="assets/images/footer-bg.png" alt="Footer Image" loading="lazy" class="w-full h-full object-cover">
+    </div>
+      <div class="bg-light pt-8 md:-mt-8 -mt-10">
+        <div class="md:container w-full mx-auto px-4">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 xl:gap-12">
+            <div class="space-y-4 sm:col-span-3 lg:col-span-1">
+              <div
+                class="flex items-center footer-logo max-w-[110px] lg:max-w-[160px] w-full sm:mx-auto lg:m-0">
+                <a href="index.html" class="block transition-transform duration-300">
+                  <img src="assets/images/logo.png" alt="footer-logo" />
+                </a>
+              </div>
+              <p
+                class="sm:text-center lg:text-start sm:max-w-lg w-full mx-auto lg:m-0 lg:max-w-full">
+                Professional laundry services with a to quality and convenience.
+                Making your life easier, one load at a time.
+              </p>
+              <div class="flex gap-3 lg:justify-start sm:justify-center">
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Quick Links
+              </h3>
+              <ul class="md:space-y-4 space-y-3 capitalize">
+                <li>
+                  <a
+                    href="about.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    pricing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="faq.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Faq
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Our Services
+              </h3>
+              <ul class="md:space-y-4 space-y-3">
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Wash & Fold
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Dry Cleaning
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Pickup & Delivery
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Special Care
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Contact Info
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-phone "></i>
+                    <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-envelope "></i>
+                    <a href="mailto:info@clenx.com">info@clenx.com</a>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-map-marker-alt "></i>
+                    <p>123 Main St, City, State</p>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-clock"></i>
+                    <p>Mon-Sun: 7AM-9PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-black mt-6 md:mt-8 py-4 md:py-6">
+            <div
+              class="flex flex-col sm:flex-row flex-wrap gap-2 justify-between sm:items-center">
+              <p>© 2025 clenx. All rights reserved.</p>
+              <ul class="flex gap-4 md:text-base text-sm">
+                <li>
+                  <a href="terms-condition.html">Terms Of Condition</a>
+                </li>
+                <li>
+                  <a href="privacy-policy.html">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- mobile menu modal  -->
+    <div
+      id="mobile-menu"
+      class="mobile-menu fixed inset-y-0 end-0 z-[100] bg-white shadow-xl transform translate-x-full transition-transform duration-300 max-w-[325px] w-full ease-in-out overflow-y-auto">
+      <div class="flex justify-between items-center p-4 border-b">
+        <a href="index.html" class="block max-w-[90px] w-full">
+          <img src="assets/images/logo.png" alt="logo" class="logo-img" />
+        </a>
+        <button
+          id="close-mobile-menu"
+          class="hover:text-primary transition-colors">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+      <nav class="p-4">
+        <ul class="space-y-2 capitalize">
+          <li>
+            <a
+              href="services.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-soap me-3"></i>Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="booking.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-calendar-check me-3"></i>booking
+            </a>
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-info-circle me-3"></i>About
+            </a>
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-tags me-3"></i>pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fa-solid fa-newspaper me-3"></i>Blog
+            </a>
+          </li>
+               <li>
+            <a
+              href="faq.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fa-solid fa-newspaper me-3"></i>faq
+            </a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-headset me-3"></i>Contact
+            </a>
+          </li>
+        </ul>
+        <div class="mt-2 py-3 px-4 rounded-2xl border space-y-2">
+          <span class="flex items-center">
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+          </span>
+          <span class="flex items-center">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:info@clenx.com">info@clenx.com</a>
+          </span>
+          <div class="flex items-center">
+            <i class="fas fa-clock me-2"></i>
+            <span class>Mon-Sat : 7AM-9PM</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Laundry Management | WorkDo</title>
+    <meta name="author" content="Workdo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Laundry Management by Workdo is a smart solution to manage laundry services, orders, delivery schedules, and customer requests efficiently.">
+    <meta name="keywords" content="Laundry Management, Laundry Addon, Workdo, Laundry Services, Order Management, Delivery Scheduling, Customer Laundry Requests, Laundry Dashboard">
+    <link rel="icon" href="assets/images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky w-full top-0 z-[3]">
+      <div
+        class="bg-secondary text-white py-2.5 relative overflow-hidden hidden lg:block">
+        <div
+          class="md:container w-full mx-auto px-4">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center text-sm relative z-10">
+            <div class="flex items-center gap-4 mb-2 sm:mb-0">
+              <span class="flex items-center">
+                <i class="fas fa-phone me-2"></i>
+                <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+              </span>
+              <span class="flex items-center">
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:info@clenx.com">info@clenx.com</a>
+              </span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-clock me-2"></i>
+              <span class>Mon-Sat : 7AM-9PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="md:container w-full mx-auto px-4 py-3 lg:py-4">
+        <div class="flex items-center justify-between">
+          <div
+            class="flex items-center logo-col md:max-w-[120px] max-w-[100px] w-full">
+            <a href="index.html" class="block">
+              <img src="assets/images/logo.png" alt="Laundry management"
+                class="w-full h-full object-scale-down" />
+            </a>
+          </div>
+          <div class="hidden lg:flex gap-8 capitalize font-medium">
+            <a
+              href="services.html"
+              class="hover:text-primary capitalize transition-all duration-300">Services</a>
+            <a
+              href="about.html"
+              class="hover:text-primary capitalize transition-all duration-300">About</a>
+            <a
+              href="pricing.html"
+              class="hover:text-primary capitalize transition-all duration-300">pricing</a>
+              <a
+              href="blog.html"
+              class="hover:text-primary capitalize transition-all duration-300">Blog</a>
+                      <a
+            href="faq.html"
+            class="hover:text-primary capitalize transition-all duration-300">faq</a>
+            <a
+            href="contact.html"
+            class="hover:text-primary capitalize transition-all duration-300">Contact</a>
+          </div>
+          <div class="flex items-center gap-4">
+            <a
+              href="booking.html"
+              class="hidden lg:inline-flex btn btn-secondary">
+              Book Now
+            </a>
+            <button
+              class="lg:hidden w-10 h-10 text-xl flex items-center justify-center"
+              id="mobile-menu-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner-section relative lg:py-16 py-10 z-[1]">
+        <div class="absolute inset-0 w-full h-full z-[-1]">
+            <img src="assets/images/common-banner-bg.png" alt="Common Banner Background Image" class="w-full h-full object-cover rtl:scale-x-[-1]" loading="lazy">
+        </div>
+        <div class="md:container w-full mx-auto px-4">
+          <div class="text-white">
+            <h2 class="text-2xl sm:text-4xl lg:text-5xl mb-2">faq</h2>
+            <nav class="md:text-base text-sm">
+              <ul class="flex flex-wrap items-center justify-start capitalize">
+                <li class="flex items-center font-medium">
+                  <a href="index.html">Home</a>
+                  <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                </li>
+                <li class="font-medium">faq</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="py-10 lg:py-16">
+        <div class="md:container w-full mx-auto px-4">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:gap-12">
+              <!-- Left Side Text -->
+              <div>
+                <h3 class="text-2xl md:text-4xl   mb-3">Professional Laundry Services</h3>
+                <p class="text-gray-600 text-sm md:text-xl leading-relaxed mb-4">Your trusted partner for all laundry and dry
+                  cleaning needs. We provide expert care for your garments with professional-grade equipment, eco-friendly
+                  cleaning solutions, and convenient pickup & delivery services that fit your busy schedule.</p>
+                <div class="w-full h-48 md:h-[30rem] rounded-2xl overflow-hidden">
+                  <img src="./assets/images/faq-img.png" alt="Professional Laundry Services"
+                    class="h-full w-full object-cover">
+                </div>
+              </div>
+  
+              <!-- Right Side FAQ Content -->
+                <div class="space-y-3">
+                  <!-- FAQ Item 1 -->
+                  <div class="faq-item bg-white border rounded-lg p-4 shadow-md">
+                    <button class="faq-question flex items-center w-full text-start focus:outline-none"
+                      aria-expanded="true">
+                      <h3 class="md:text-lg text-base font-semibold text-secondary flex-1">What services do you offer?
+                      </h3>
+                      <i class="fas fa-minus text-primary ml-2 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600 text-sm md:text-base">
+                      We offer comprehensive laundry services including wash & fold, dry cleaning, express ironing, and
+                      convenient pickup & delivery. All services include professional stain treatment and specialized
+                      fabric care.
+                    </div>
+                  </div>
+  
+                  <!-- FAQ Item 2 -->
+                  <div class="faq-item bg-white border rounded-lg p-4 shadow-md">
+                    <button class="faq-question flex items-center w-full text-start focus:outline-none"
+                      aria-expanded="false">
+                      <h3 class="md:text-lg text-base font-semibold text-secondary flex-1">How does pickup and delivery
+                        work?</h3>
+                      <i class="fas fa-plus text-primary ml-2 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600 text-sm md:text-base hidden">
+                      Simply schedule online or call us to arrange pickup. Our professional team will collect your laundry
+                      at your preferred time and location, then deliver it back clean and folded within 24-48 hours.
+                    </div>
+                  </div>
+  
+                  <!-- FAQ Item 3 -->
+                  <div class="faq-item bg-white border rounded-lg p-4 shadow-md">
+                    <button class="faq-question flex items-center w-full text-start focus:outline-none"
+                      aria-expanded="false">
+                      <h3 class="md:text-lg text-base font-semibold text-secondary flex-1">What are your pricing rates?
+                      </h3>
+                      <i class="fas fa-plus text-primary ml-2 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600 text-sm md:text-base hidden">
+                      Our competitive rates start at $1.50/lb for wash & fold and $8/item for dry cleaning. Visit our
+                      pricing page for detailed rates and current promotions.
+                    </div>
+                  </div>
+  
+                  <!-- FAQ Item 4 -->
+                  <div class="faq-item bg-white border rounded-lg p-4 shadow-md">
+                    <button class="faq-question flex items-center w-full text-start focus:outline-none"
+                      aria-expanded="false">
+                      <h3 class="md:text-lg text-base font-semibold text-secondary flex-1">Do you handle delicate fabrics?
+                      </h3>
+                      <i class="fas fa-plus text-primary ml-2 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600 text-sm md:text-base hidden">
+                      Yes! We specialize in delicate fabrics including silk, wool, cashmere, and designer clothing. Each
+                      item receives appropriate care based on fabric type and manufacturer instructions.
+                    </div>
+                  </div>
+  
+                  <!-- FAQ Item 5 -->
+                  <div class="faq-item bg-white border rounded-lg p-4 shadow-md">
+                    <button class="faq-question flex items-center w-full text-start focus:outline-none"
+                      aria-expanded="false">
+                      <h3 class="md:text-lg text-base font-semibold text-secondary flex-1">What if my clothes are damaged?
+                      </h3>
+                      <i class="fas fa-plus text-primary ml-2 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600 text-sm md:text-base hidden">
+                      We're fully insured and guarantee our work. If damage occurs due to our negligence, we'll repair or
+                      replace the item at no cost to you. Your satisfaction is our priority.
+                    </div>
+                  </div>
+  
+                  <!-- FAQ Item 6 -->
+                  <div class="faq-item bg-white border rounded-lg p-4 shadow-md">
+                    <button class="faq-question flex items-center w-full text-start focus:outline-none"
+                      aria-expanded="false">
+                      <h3 class="md:text-lg text-base font-semibold text-secondary flex-1">How do I track my order?</h3>
+                      <i class="fas fa-plus text-primary ml-2 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600 text-sm md:text-base hidden">
+                      You'll receive SMS and email updates at each stage. Use your unique order number on our website to
+                      check real-time status and estimated completion time.
+                    </div>
+                  </div>
+  
+                  <!-- FAQ Item 7 -->
+                  <div class="faq-item bg-white border rounded-lg p-4 shadow-md">
+                    <button class="faq-question flex items-center w-full text-start focus:outline-none"
+                      aria-expanded="false">
+                      <h3 class="md:text-lg text-base font-semibold text-secondary flex-1">What payment methods do you
+                        accept?</h3>
+                      <i class="fas fa-plus text-primary ml-2 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600 text-sm md:text-base hidden">
+                      We accept all major payment methods including cash, credit cards, debit cards, and digital payments
+                      like Apple Pay, Google Pay, and PayPal for your convenience.
+                    </div>
+                  </div>
+  
+                  <!-- FAQ Item 8 -->
+                  <div class="faq-item bg-white border rounded-lg p-4 shadow-md">
+                    <button class="faq-question flex items-center w-full text-start focus:outline-none"
+                      aria-expanded="false">
+                      <h3 class="md:text-lg text-base font-semibold text-secondary flex-1">Do you offer same-day service?
+                      </h3>
+                      <i class="fas fa-plus text-primary ml-2 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600 text-sm md:text-base hidden">
+                      Yes! We offer same-day service for orders placed before 10 AM. Express service is available for an
+                      additional fee and perfect for urgent cleaning needs.
+                    </div>
+                  </div>
+  
+                  <!-- FAQ Item 9 -->
+                  <div class="faq-item bg-white border rounded-lg p-4 shadow-md">
+                    <button class="faq-question flex items-center w-full text-start focus:outline-none"
+                      aria-expanded="false">
+                      <h3 class="md:text-lg text-base font-semibold text-secondary flex-1">Are your cleaning products
+                        eco-friendly?</h3>
+                      <i class="fas fa-plus text-primary ml-2 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-2 text-gray-600 text-sm md:text-base hidden">
+                      Absolutely! We use biodegradable, non-toxic cleaning products that are safe for you, your family,
+                      and the environment while still delivering exceptional cleaning results.
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+     <footer
+      class="md:pt-44 pt-24 relative overflow-hidden">
+    <div class="absolute top-0 start-0 w-full md:h-[155px] h-[60px]">
+      <img src="assets/images/footer-bg.png" alt="Footer Image" loading="lazy" class="w-full h-full object-cover">
+    </div>
+      <div class="bg-light pt-8 md:-mt-8 -mt-10">
+        <div class="md:container w-full mx-auto px-4">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 xl:gap-12">
+            <div class="space-y-4 sm:col-span-3 lg:col-span-1">
+              <div
+                class="flex items-center footer-logo max-w-[110px] lg:max-w-[160px] w-full sm:mx-auto lg:m-0">
+                <a href="index.html" class="block transition-transform duration-300">
+                  <img src="assets/images/logo.png" alt="footer-logo" />
+                </a>
+              </div>
+              <p
+                class="sm:text-center lg:text-start sm:max-w-lg w-full mx-auto lg:m-0 lg:max-w-full">
+                Professional laundry services with a to quality and convenience.
+                Making your life easier, one load at a time.
+              </p>
+              <div class="flex gap-3 lg:justify-start sm:justify-center">
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+                <a
+                  href="javascript:;"
+                  class="md:w-10 w-8 h-8 md:h-10 border border-primary text-primary bg-primary hover:bg-white hover:text-primary text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Quick Links
+              </h3>
+              <ul class="md:space-y-4 space-y-3 capitalize">
+                <li>
+                  <a
+                    href="about.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    pricing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="faq.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Faq
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Our Services
+              </h3>
+              <ul class="md:space-y-4 space-y-3">
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Wash & Fold
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Dry Cleaning
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Pickup & Delivery
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="md:text-base text-sm inline-flex items-center hover:translate-x-2 transition-all duration-300">
+                    <i class="fas fa-chevron-right text-xs me-2"></i>
+                    Special Care
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="sm:text-xl text-lg lg:text-2xl mb-3 md:mb-6">
+                Contact Info
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-phone "></i>
+                    <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-envelope "></i>
+                    <a href="mailto:info@clenx.com">info@clenx.com</a>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-map-marker-alt "></i>
+                    <p>123 Main St, City, State</p>
+                </div>
+                <div class="flex items-center gap-4 md:text-base text-sm">
+                    <i class="fas fa-clock"></i>
+                    <p>Mon-Sun: 7AM-9PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-black mt-6 md:mt-8 py-4 md:py-6">
+            <div
+              class="flex flex-col sm:flex-row flex-wrap gap-2 justify-between sm:items-center">
+              <p>© 2025 clenx. All rights reserved.</p>
+              <ul class="flex gap-4 md:text-base text-sm">
+                <li>
+                  <a href="terms-condition.html">Terms Of Condition</a>
+                </li>
+                <li>
+                  <a href="privacy-policy.html">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- mobile menu modal  -->
+    <div
+      id="mobile-menu"
+      class="mobile-menu fixed inset-y-0 end-0 z-[100] bg-white shadow-xl transform translate-x-full transition-transform duration-300 max-w-[325px] w-full ease-in-out overflow-y-auto">
+      <div class="flex justify-between items-center p-4 border-b">
+        <a href="index.html" class="block max-w-[90px] w-full">
+          <img src="assets/images/logo.png" alt="logo" class="logo-img" />
+        </a>
+        <button
+          id="close-mobile-menu"
+          class="hover:text-primary transition-colors">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+      <nav class="p-4">
+        <ul class="space-y-2 capitalize">
+          <li>
+            <a
+              href="services.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-soap me-3"></i>Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="booking.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-calendar-check me-3"></i>booking
+            </a>
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-info-circle me-3"></i>About
+            </a>
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-tags me-3"></i>pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fa-solid fa-newspaper me-3"></i>Blog
+            </a>
+          </li>
+               <li>
+            <a
+              href="faq.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fa-solid fa-newspaper me-3"></i>faq
+            </a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block py-3 px-4 rounded-xl hover:bg-gray-100 transition-colors border">
+              <i class="fas fa-headset me-3"></i>Contact
+            </a>
+          </li>
+        </ul>
+        <div class="mt-2 py-3 px-4 rounded-2xl border space-y-2">
+          <span class="flex items-center">
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+          </span>
+          <span class="flex items-center">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:info@clenx.com">info@clenx.com</a>
+          </span>
+          <div class="flex items-center">
+            <i class="fas fa-clock me-2"></i>
+            <span class>Mon-Sat : 7AM-9PM</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
